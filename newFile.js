@@ -1,4 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
@@ -8,7 +7,7 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-    // darkMode: 'class',
+    darkMode: 'class',
     theme: {
         extend: {
             fontFamily: {
@@ -18,6 +17,7 @@ export default {
         colors: {
             primary: {
                 light: '#09090B',
+                // DEFAULT: '#09090B',
                 dark: '#FAFAFA',
             },
             secondary: {
