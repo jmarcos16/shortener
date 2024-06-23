@@ -1,4 +1,3 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
 /** @type {import('tailwindcss').Config} */
@@ -8,22 +7,11 @@ export default {
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
-    // darkMode: 'class',
+    darkMode: 'class',
     theme: {
         extend: {
             fontFamily: {
                 sans: ['Geist Sans'],
-            },
-        },
-        colors: {
-            primary: {
-                light: '#09090B',
-                dark: '#FAFAFA',
-            },
-            secondary: {
-                light: '#B2F5EA',
-                DEFAULT: '#81E6D9',
-                dark: '#4FD1C5',
             },
         },
     },
